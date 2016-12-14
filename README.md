@@ -1,6 +1,4 @@
 # antd demo示例
-
-## 目的
 尝试antd+webpack+react构建项目，这里想尝试一下antd构建的项目中webpack有何不同？全局的类库（如jquery）如何配置？以及如何避免类库文件打包。
 
 ## 一、安装ant-init
