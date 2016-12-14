@@ -14,10 +14,34 @@ antd-init@2 仅适用于学习和体验 antd，如果你要开发项目，推荐
 
 ## 四、使用组件
 替换index.js
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { DatePicker, message } from 'antd';
-https://ant.design/components/transfer/
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: '',
+    };
+  }
+  handleChange(date) {
+    message.info('您选择的日期是: ' + date.toString());
+    this.setState({ date });
+  }
+  render() {
+    return (
+      <div style={{ width: 400, margin: '100px auto' }}>
+        <DatePicker onChange={value => this.handleChange(value)} />
+        <div style={{ marginTop: 20 }}>当前日期：{this.state.date.toString()}</div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
 
 ## 五、开发调试
 npm start
