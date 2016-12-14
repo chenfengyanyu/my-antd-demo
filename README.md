@@ -86,3 +86,7 @@ module.exports = function(webpackConfig) {
     return webpackConfig;
 };
 ```
+## 八、相关文档
+1.[ant design](https://ant.design/docs/react/introduce-cn)
+2.[atool-build 简介](http://ant-tool.github.io/setup.html)
+3.[webpack](http://webpack.github.io/docs/configuration.html#entry)
